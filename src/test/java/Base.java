@@ -12,7 +12,8 @@ public class Base {
 
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         webDriver = new ChromeDriver();
-        webDriver.get("https://www.testfaceclub.com/ejercicios/");
+        webDriver.get("web:http://automationpractice.com/index.php");
+        webDriver.get("http://automationpractice.com/index.php?controller=order");
     }
     @AfterMethod
     public void tearDown (){
